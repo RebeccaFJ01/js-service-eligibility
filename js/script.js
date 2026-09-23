@@ -7,15 +7,21 @@ function tjekGratisService(brand, year) {
     let harGratisService = false;
 
     // Skriv if/else-strukturen selv herinde, ligesom i klasseøvelsen.
-
-    if (brand === `Volkswagen`|| `Skode` && year > 2023);
-    console.log()
-
     //
     // Hvis (brand er "Volkswagen" ELLER brand er "Skoda") OG year er større end 2023, så:
+
+
+    if ((brand === `Volkswagen`|| `Skode`) && year > 2023)
+
     //   - sæt harGratisService til true
     //   - log `${brand} fra ${year} får gratis service i 1 år.`
+
+      console.log(`${brand} fra ${year} får gratis service i 1 år.`)
+    
     // Ellers:
+
+    else {console.log(`${brand} fra ${year} får ikke gratis service.`)}
+
     //   - sæt harGratisService til false
     //   - log `${brand} fra ${year} får ikke gratis service.`
 
